@@ -1,0 +1,195 @@
+  body {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background-color:antiquewhite;
+}
+
+header {
+  height: 140px;
+  background-color: antiquewhite;
+  margin-bottom: 40px;
+}
+
+.logo {
+  font-family:fantasy;
+  font-size: 60px;
+  color: blue; 
+  text-align: center;
+  letter-spacing: -3;
+  margin:0;
+  padding: 20px 0 0 0;
+}
+
+img, iframe { 
+  width: 100%;	
+  border-radius: 8px;
+  border: 1px solid blue;
+} 
+
+
+/* nav*/
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: blue;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+header nav ul li a:hover{
+  color:blueviolet;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media all and (min-width: 600px){
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .logo{
+    margin: 14px 0 14px 20px;
+    padding-top: 0;
+    font-size: 42px;
+  }
+
+  header nav {
+  margin-top: 14px;
+  }
+}
+
+@media all and (min-width: 600;){
+  section {
+    padding: 0 10%;
+  }
+  .group {
+    flex-direction: row;
+  }
+}
+
+/*prim*/ 
+
+main {
+  padding: 20px 0;
+}
+
+section{
+  margin-bottom: 100px;
+}
+
+section.dark-background{
+  background-color: blueviolet;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin: 80px 0;
+}
+
+section {
+	padding: 0 30%;
+  margin: 30px 0;
+}
+
+
+footer { 
+  background-color: antiquewhite;
+  color:blue; 
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+/* typo */
+
+h1 {
+  font-family:fantasy;
+  font-weight: 400;
+  font-size: 28px;
+  color: blue;
+}
+
+h2 {
+  font-family:fantasy;
+  font-weight: 400;
+  font-size: 28px;
+  color: blue;
+  margin: 0 10px;
+}
+h3 {
+  font-family:fantasy;
+  font-weight: 400;
+  font-size: 28px;
+  color: blue;
+}
+
+p {
+  font-family: fantasy;
+  line-height: 1.0em;
+  margin: 0;
+  color:indigo;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item{
+  flex: 1;
+  margin: 10px
+}
+.item-double {
+  flex: 2;
+}
+
+img.image-enhanced{
+  border-radius: 8px;
+}
+
+main img {
+  width: 100%;
+}
+
+main a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+main a:link{ color: gold}
+main a:visited{color:white}
+main a:hover{ color:aqua}
+
+form {
+  padding-right: 8px;
+}
+form label {
+  display: block;
+}
+
+form textarea{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+}
+
