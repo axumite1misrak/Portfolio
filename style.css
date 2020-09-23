@@ -1,195 +1,275 @@
-  body {
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,600;1,700&display=swap");
+body {
   margin: 0;
-  font-family: 'Courier New', Courier, monospace;
-  background-color:antiquewhite;
+  font-family: "Crimson Text", serif;
 }
 
-header {
-  height: 140px;
-  background-color: antiquewhite;
-  margin-bottom: 40px;
+/*Navbar */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: coral;
 }
-
-.logo {
-  font-family:fantasy;
-  font-size: 60px;
-  color: blue; 
+.nav-bar-logo {
+  display: flex;
+  align-content: center;
   text-align: center;
-  letter-spacing: -3;
-  margin:0;
-  padding: 20px 0 0 0;
+  color: aquamarine;
 }
-
-img, iframe { 
-  width: 100%;	
-  border-radius: 8px;
-  border: 1px solid blue;
-} 
-
-
-/* nav*/
-
-header nav {
+.nav-bar-menu {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
+  text-align: center;
+  padding-top: 15px;
 }
+/*Mobil*/
 
-header nav ul{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-header nav ul li {
-  list-style-type: none;
-}
-
-header nav ul li a {
-  color: blue;
-  text-decoration: none;
-  padding: 0 20px 0 0;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
-
-header nav ul li a:hover{
-  color:blueviolet;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-@media all and (min-width: 600px){
-  header {
+@media all and (max-width: 600px) {
+  .navbar {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
   }
-
-
-  .logo{
-    margin: 14px 0 14px 20px;
-    padding-top: 0;
-    font-size: 42px;
+  .nav-bar-logo {
+    display: flex;
+    justify-content: center;
   }
-
-  header nav {
-  margin-top: 14px;
+  .nav-bar-menu {
+    padding-top: 10px;
   }
 }
+/*Navbar Component*/
 
-@media all and (min-width: 600;){
-  section {
-    padding: 0 10%;
-  }
-  .group {
-    flex-direction: row;
-  }
+nav a {
+  text-decoration: none;
+  color: white;
 }
-
-/*prim*/ 
-
-main {
-  padding: 20px 0;
+nav ul {
+  text-decoration: none;
+  list-style: none;
 }
-
-section{
-  margin-bottom: 100px;
+li {
+  padding-right: 15px;
 }
-
-section.dark-background{
-  background-color: blueviolet;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  margin: 80px 0;
+/*Navbar Component hover*/
+.nav-bar-menu li :hover {
+  color: black;
+  box-shadow: black 2px 0px 0px 0px;
 }
+/*---------END NAVBAR -----------------*/
 
-section {
-	padding: 0 30%;
-  margin: 30px 0;
+/*Profile - Content */
+.intro-container {
+  display: flex;
+  flex-direction: row;
+  height: 450px;
+  background-color: rgb(230, 150, 121);
 }
-
-
-footer { 
-  background-color: antiquewhite;
-  color:blue; 
-  margin-top: 40px;
-  margin-bottom: 0;
-}
-
-/* typo */
-
-h1 {
-  font-family:fantasy;
-  font-weight: 400;
-  font-size: 28px;
-  color: blue;
-}
-
-h2 {
-  font-family:fantasy;
-  font-weight: 400;
-  font-size: 28px;
-  color: blue;
-  margin: 0 10px;
-}
-h3 {
-  font-family:fantasy;
-  font-weight: 400;
-  font-size: 28px;
-  color: blue;
-}
-
-p {
-  font-family: fantasy;
-  line-height: 1.0em;
-  margin: 0;
-  color:indigo;
-}
-
-.group {
+.profile-content {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  padding-top: 30px;
+  color: rgb(80, 114, 103);
+}
+.profile-picture {
+  padding-left: 30px;
+  padding-top: 7rem;
+  padding-right: 30px;
+}
+.profile-picture img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
 }
 
-.item{
-  flex: 1;
-  margin: 10px
+/*Mobil Profile Conetnt*/
+
+@media all and (max-width: 600px) {
+  .intro-container {
+    display: flex;
+    flex-direction: column;
+    height: 750px;
+  }
+  .profile-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 30px;
+    color: rgb(80, 114, 103);
+  }
+  .profile-picture {
+    display: flex;
+    justify-content: center;
+  }
 }
-.item-double {
-  flex: 2;
+/*About Me*/
+.aboutme-container {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  background-color: aquamarine;
+}
+.aboutme-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 10px;
+  color: rgb(80, 114, 103);
 }
 
-img.image-enhanced{
-  border-radius: 8px;
+.webdev-picture {
+  display: inline-flex;
+  flex-flow: row;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-main img {
-  width: 100%;
+.webdev-picture img {
+  padding-top: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+}
+.housekeeping-picture {
+  display: inline-flex;
+  flex-flow: row;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-main a {
-  font-weight: 700;
-  text-decoration: none;
+.housekeeping-picture img {
+  padding-top: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
 }
 
-main a:link{ color: gold}
-main a:visited{color:white}
-main a:hover{ color:aqua}
-
-form {
-  padding-right: 8px;
-}
-form label {
-  display: block;
+.apps-picture {
+  display: inline-flex;
+  flex-flow: row;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-form textarea{
-  width: 100%;
-  margin-bottom: 20px;
+.apps-picture img {
+  padding-top: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
 }
 
-form textarea {
-  height: 160px;
+/*Mobil About Me Conetnt*/
+@media all and (max-width: 800px) {
+  .aboutme-container {
+    padding-bottom: 250px;
+  }
 }
 
+@media all and (max-width: 600px) {
+  .aboutme-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 450px;
+  }
+  .aboutme-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 30px;
+    color: rgb(80, 114, 103);
+  }
+  .webdev-picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .housekeeping-picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .apps-picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/*Find me - Content */
+.findme-container {
+  display: flex;
+  flex-direction: column;
+  height: 450;
+  background-color: rgb(230, 150, 121);
+}
+.findme-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 30px;
+  color: rgb(80, 114, 103);
+}
+
+/* Mobil Find me Content */
+@media all and (max-width: 600px) {
+  .findme-container {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+  }
+  .findme-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 30px;
+    color: rgb(80, 114, 103);
+  }
+}
+
+/* Contact me*/
+
+.contactme-continer {
+  display: flex;
+  flex-direction: column;
+  height: 450;
+  background-color: aquamarine;
+}
+
+.contactme-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  color: rgb(80, 114, 103);
+}
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-box div {
+  padding-bottom: 10px;
+}
+
+textarea {
+  height: 100px;
+  width: 400px;
+}
+/* Mobile Contact me*/
+@media all and (max-width: 600px) {
+  .contactme-continer {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+  }
+  .contactme-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 30px;
+    color: rgb(80, 114, 103);
+  }
+}
