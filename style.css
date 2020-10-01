@@ -9,22 +9,23 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: coral;
+  background-color: rgb(175, 169, 169);
 }
 .nav-bar-logo {
   display: flex;
   align-content: center;
   text-align: center;
-  color: aquamarine;
+  color: black;
 }
 .nav-bar-menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
-/*Mobil*/
+/* Navbar Mobil*/
 
 @media all and (max-width: 600px) {
   .navbar {
@@ -43,7 +44,7 @@ body {
 
 nav a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 nav ul {
   text-decoration: none;
@@ -54,146 +55,259 @@ li {
 }
 /*Navbar Component hover*/
 .nav-bar-menu li :hover {
-  color: black;
-  box-shadow: black 2px 0px 0px 0px;
+  color: white;
 }
 /*---------END NAVBAR -----------------*/
 
-/*Profile - Content */
+/*Intro-Profile - Content */
 .intro-container {
   display: flex;
   flex-direction: row;
   height: 450px;
-  background-color: rgb(230, 150, 121);
+  background-color: rgb(245, 245, 245);
 }
-.profile-content {
+.aboutme-title {
+  text-align: center;
+  font-size: x-large;
+}
+
+.intro-content {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding-top: 30px;
-  color: rgb(80, 114, 103);
+  font-size: large;
+  color: black;
 }
-.profile-picture {
+.intro-picture {
   padding-left: 30px;
   padding-top: 7rem;
   padding-right: 30px;
 }
-.profile-picture img {
+.intro-picture img {
   width: 200px;
-  height: 200px;
+  height: 300px;
   border-radius: 20px;
 }
 
-/*Mobil Profile Conetnt*/
-
+/*Mobil intro-Profile Conetnt*/
+@media all and (max-width: 360px) {
+  .intro-container {
+    padding-bottom: 100px;
+  }
+  .intro-content {
+    font-size: small;
+  }
+}
+@media all and (max-width: 400px) {
+  .intro-container {
+    padding-bottom: 100px;
+  }
+  .intro-content {
+    font-size: small;
+  }
+}
+@media all and (max-width: 500px) {
+  .intro-container {
+    padding-bottom: 10px;
+  }
+  .intro-content {
+    font-size: large;
+  }
+}
 @media all and (max-width: 600px) {
   .intro-container {
     display: flex;
     flex-direction: column;
-    height: 750px;
+    height: fit-content;
+    padding-bottom: 20px;
   }
-  .profile-content {
+  .intro-content {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-top: 30px;
-    color: rgb(80, 114, 103);
+    text-indent: 10px;
+    padding-top: 20px;
+    color: black;
+    font-size: medium;
   }
-  .profile-picture {
+  .intro-picture {
     display: flex;
     justify-content: center;
   }
 }
-/*About Me*/
-.aboutme-container {
+
+/*Skills*/
+.skills-container {
   display: flex;
   flex-direction: column;
   height: 400px;
-  background-color: aquamarine;
+  background-color: rgb(175, 169, 169);
 }
-.aboutme-content {
-  display: flex;
-  flex-direction: column;
+
+.skills-title h2 {
   text-align: center;
-  padding-top: 10px;
-  color: rgb(80, 114, 103);
+  padding-top: 20px;
+  font-size: x-large;
+  color: black;
 }
 
-.webdev-picture {
-  display: inline-flex;
-  flex-flow: row;
-  padding-left: 30px;
-  padding-right: 30px;
+.skills-element {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: larger;
 }
 
-.webdev-picture img {
-  padding-top: 10px;
-  width: 200px;
-  height: 200px;
-  border-radius: 20px;
-}
-.housekeeping-picture {
-  display: inline-flex;
-  flex-flow: row;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.housekeeping-picture img {
-  padding-top: 10px;
-  width: 200px;
-  height: 200px;
-  border-radius: 20px;
-}
-
-.apps-picture {
-  display: inline-flex;
-  flex-flow: row;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.apps-picture img {
-  padding-top: 10px;
-  width: 200px;
-  height: 200px;
-  border-radius: 20px;
-}
-
-/*Mobil About Me Conetnt*/
+/*Mobil Skills Conetnt*/
 @media all and (max-width: 800px) {
-  .aboutme-container {
-    padding-bottom: 250px;
+  .skills-container {
+    font-size: medium;
+  }
+}
+@media all and (max-width: 360px) {
+  .skills-container {
+    height: fit-content;
+    padding-bottom: 30px;
+  }
+  .skills-title h2 {
+    color: black;
+    text-align: center;
+  }
+  .skills-element {
+    display: flex;
+    flex-direction: column;
+    padding-left: 90px;
+  }
+}
+
+@media all and (max-width: 460px) {
+  .skills-container {
+    height: fit-content;
+    padding-bottom: 30px;
+  }
+  .skills-title h2 {
+    color: black;
+    text-align: center;
+  }
+  .skills-element {
+    display: flex;
+    flex-direction: column;
+    padding-left: 90px;
+  }
+}
+
+@media all and (max-width: 540px) {
+  .skills-container {
+    height: fit-content;
+    padding-bottom: 30px;
+  }
+  .skills-title h2 {
+    padding-left: 50px;
+  }
+  .skills-element {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
   }
 }
 
 @media all and (max-width: 600px) {
-  .aboutme-container {
+  .skills-container {
     display: flex;
-    flex-direction: column;
-    padding-bottom: 450px;
+    flex-direction: row;
   }
-  .aboutme-content {
+  .skills-element {
     display: flex;
     flex-direction: column;
+  }
+}
+
+/*Projects -content*/
+.projects-container {
+  height: 450px;
+  background-color: whitesmoke;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.project-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.bookmark.app {
+  padding-top: 30px;
+}
+.project-title {
+  padding-top: 50px;
+  text-align: center;
+  font-size: large;
+}
+
+h3 {
+  text-align: center;
+  font-size: large;
+}
+a {
+  text-decoration: none;
+}
+
+.quiz-btn {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bookmark-btn {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media all and (max-width: 360px) {
+  .projects-container {
     text-align: center;
-    padding-top: 30px;
-    color: rgb(80, 114, 103);
+    height: 550px;
   }
-  .webdev-picture {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  .project-display {
+    font-size: medium;
   }
-  .housekeeping-picture {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+}
+@media all and (max-width: 411px) {
+  .projects-container {
+    text-align: center;
+    height: 550px;
   }
-  .apps-picture {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+}
+@media all and (max-width: 414px) {
+  .projects-container {
+    text-align: center;
+    height: 550px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .projects-container {
+    text-align: center;
+    height: 650px;
+  }
+  .project-display {
+    font-size: medium;
+  }
+}
+@media all and (max-width: 800px) {
+  .projects-container {
+    text-align: center;
+  }
+  .project-display {
+    font-size: large;
+  }
+}
+@media all and (max-width: 1024px) {
+  .projects-container {
+    text-align: center;
+  }
+  .project-display {
+    font-size: large;
   }
 }
 
@@ -201,40 +315,88 @@ li {
 .findme-container {
   display: flex;
   flex-direction: column;
-  height: 450;
-  background-color: rgb(230, 150, 121);
+  height: 450px;
+  background-color: rgb(175, 169, 169);
 }
 .findme-content {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding-top: 30px;
-  color: rgb(80, 114, 103);
+  color: black;
+  font-size: large;
 }
 
 /* Mobil Find me Content */
+@media all and (max-width: 360px) {
+  .findme-container {
+    text-align: center;
+  }
+
+  .findme-content {
+    font-size: medium;
+  }
+}
 @media all and (max-width: 600px) {
   .findme-container {
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height: 450px;
+    background-color: rgb(175, 169, 169);
   }
+
   .findme-content {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-top: 30px;
-    color: rgb(80, 114, 103);
+    color: black;
+    font-size: medium;
+  }
+}
+@media all and (max-width: 800px) {
+  findme-container {
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    background-color: rgb(175, 169, 169);
+  }
+
+  .findme-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    color: black;
+    font-size: medium;
+  }
+}
+@media all and (max-width: 1024px) {
+  findme-container {
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    background-color: rgb(175, 169, 169);
+  }
+
+  .findme-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    color: black;
+    font-size: medium;
   }
 }
 
 /* Contact me*/
-
 .contactme-continer {
   display: flex;
   flex-direction: column;
   height: 450;
-  background-color: aquamarine;
+  background-color: whitesmoke;
 }
 
 .contactme-content {
@@ -243,7 +405,8 @@ li {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 40px;
-  color: rgb(80, 114, 103);
+  color: black;
+  font-size: large;
 }
 .contact-box {
   display: flex;
@@ -256,20 +419,39 @@ li {
 
 textarea {
   height: 100px;
-  width: 400px;
+  width: 200px;
 }
 /* Mobile Contact me*/
+
+@media all and (max-width: 360px) {
+  .contactme-continer {
+    padding-bottom: 105px;
+  }
+}
+@media all and (max-width: 460px) {
+  .contactme-continer {
+    padding-bottom: 105px;
+  }
+}
+@media all and (max-width: 540px) {
+  .contactme-continer {
+    padding-bottom: 100px;
+  }
+}
+
 @media all and (max-width: 600px) {
   .contactme-continer {
     display: flex;
     flex-direction: column;
     height: 400px;
+    background-color: whitesmoke;
   }
   .contactme-content {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-top: 30px;
-    color: rgb(80, 114, 103);
+    color: black;
+    font-size: large;
   }
 }

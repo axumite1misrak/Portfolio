@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -14,10 +15,10 @@
         <div>
           <nav>
             <ul class="nav-bar-menu">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a herf="#contact">Contact</a></li>
+              <li><a href="#Home">Home</a></li>
+              <li><a href="#About">About</a></li>
+              <li><a href="#Portfolio">Portfolio</a></li>
+              <li><a href="#Contact">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -26,139 +27,215 @@
 
     <main>
       <!-- intro-->
-      <div class="intro-container">
-        <div class="profile-picture">
-          <img
-            src="image/ublt.jpg"
-            alt="Misrak Teka - Profile Photo"
-            class="image"
-          />
-        </div>
-
-        <div class="profile-content">
-          <div>
-            <h1>Hello!!!</h1>
-            <p>
-              My name is Misrak Teka and I live in Minneapolis, MN.I am
-              currently attending Metropolitan State University as class of
-              2021.
-            </p>
-            <p>
-              After high school I attended the University of Minnesota Duluth
-              for 3 years working on a biocemistry. However, I was very unhappy
-              with the subject and wasn't doing well at all. Then as you can
-              imagen that made my academic life very difficult.Then I
-              transferred to a local community collage and after many trials and
-              error trying to find what I would like to do with my life I
-              finally started my computer science dgree.
-            </p>
-            <p>
-              When I am not coding I love watching Korean dramas and singing. I
-              also work with youth around my area via a church they attend. I
-              also serve around the churches by singing and holding small
-              gatherings when able.I plan to become an excellent Software
-              Engineer.
-            </p>
+      <section class="intro">
+        <section class="intro-container">
+          <div class="intro-picture">
+            <img
+              src="image/ublt.jpg"
+              alt="Misrak Teka - Profile Photo"
+              class="image"
+            />
           </div>
+
+          <section class="intro-content">
+            <div class="aboutme-title">
+              <h1>About Me</h1>
+            </div>
+
+            <div>
+              <p>
+                My name is Misrak Teka and I live in Minneapolis, MN. I am
+                currently attending Metropolitan State University as class of
+                2021.After high school I attended the University of Minnesota
+                Duluth for 3 years working on biocemistry. However, I was very
+                unhappy with the subject and was not doing well at all. Then as
+                you can imagine that made my academic life very difficult. Then
+                I transferred to a local community collage and after many trials
+                and error trying to find what I would like to do with my life, I
+                finally started my computer science degree.
+              </p>
+              <p>
+                When I am not coding, I love watching Korean dramas and singing.
+                I also love working with youth around my area via any church
+                they attend. In addtion I serve around the churches by singing.
+                I plan to become an excellent Software Engineer in the future
+                and make my mark in the tech world.
+              </p>
+            </div>
+          </section>
+        </section>
+      </section>
+
+      <!--Skills me -->
+      <section class="skills-container">
+        <section class="skills-title">
+          <h2>What Can I Do For You?</h2>
+          <section class="skills-element">
+            <div>
+              <p>Developmental Langues</p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Java Script</li>
+                <li>Python</li>
+                <li>PHP</li>
+                <li>Ruby</li>
+              </ul>
+            </div>
+            <div>
+              <p>Website Designing Front-end</p>
+              <ul>
+                <li>Bootstrap</li>
+                <li>Angular-JS</li>
+                <li>React-JS</li>
+              </ul>
+            </div>
+            <div>
+              <p>Website Designing Back-end</p>
+              <ul>
+                <li>Node-JS</li>
+                <li>Django</li>
+              </ul>
+            </div>
+          </section>
+        </section>
+      </section>
+
+      <!-- Projects-->
+      <section class="projects-container">
+        <div class="project-title">
+          <h2>My Live Projects to Explore</h2>
         </div>
-      </div>
-
-      <!--About me -->
-      <div class="aboutme-container">
-        <div class="aboutme-content">
-          <div>
-            <h2>What Can I Do For You?</h2>
-            <p>Full stack web development</p>
-            <p>Website design and maintenance</p>
-            <p>App development for your needs</p>
-            <div class="webdev-picture">
-              <img
-                src="image/fswd.jpg"
-                alt="Misrak Teka - webdev-picture"
-                class="image"
-              />
-            </div>
-
-            <div class="housekeeping-picture">
-              <img
-                src="image/wedm.jpg"
-                alt="Misrak Teka - housekeeping-picture"
-                class="image"
-              />
-            </div>
-
-            <div class="apps-picture">
-              <img
-                src="image/apps.jpg"
-                alt="Misrak Teka - apps-picture"
-                class="image"
-              />
+        <section class="project-display">
+          <div class="qizz-app">
+            <h3>Quiz-App Project</h3>
+            <p>
+              In this project I made a quiz that can be taken for fun with my
+              partner. We made the quiz using HTML, CSS and JS with jquery. I
+              learned a lot about DOM manipulations and CSS styling to make this
+              project successful. I hope you take the quiz and have fun like we
+              did. Even more amazing you can use the git hub link to look at the
+              project itself.
+            </p>
+            <div class="quiz-btn">
+              <button class="tak-quiz">
+                <a href="https://johnnyjuarez.github.io/thinkful-quiz-app/"
+                  >Take Quiz</a
+                >
+              </button>
+              <button class="git-hub">
+                <a href="https://github.com/johnnyjuarez/thinkful-quiz-app"
+                  >Github Repository</a
+                >
+              </button>
             </div>
           </div>
-        </div>
-      </div>
+
+          <div class="bookmark-app">
+            <h3>Bookmark App Project</h3>
+
+            <p>
+              In this project I made a web app that allows you to make a
+              bookmark for your favorite site.In this app you can add, rate and
+              delete your sites as you like. It will also allow you to put your
+              own description for the sites.
+            </p>
+
+            <div class="bookmark-btn">
+              <button class="bookmark">
+                <!--This is not work b/c its not done yet so only the link to the repo will show up when you click it-->
+                <a
+                  href="https://github.com/thinkful-ei-shark/misrak-teka-bookmarkapp"
+                >
+                  Bookmark</a
+                >
+              </button>
+              <button class="qithub">
+                <a
+                  href="https://github.com/thinkful-ei-shark/misrak-teka-bookmarkapp"
+                >
+                  Github Repository</a
+                >
+              </button>
+            </div>
+          </div>
+        </section>
+      </section>
 
       <!---findme-->
-      <div class="findme-container">
-        <div class="findme-content">
-          <div>
-            <h2>Find ME @</h2>
+      <div class="Portfolio">
+        <div class="findme-container">
+          <div class="findme-content">
             <div>
-              <h3>Find me on Linkedin</h3>
-              <p>You can see my full resumea on linkedin.</p>
-              <a href="https://www.linkedin.com/in/misrak-teka-44b3901b2/"
-                >LinkedIn</a
-              >
-            </div>
-            <div>
-              <h3>Find me on GitHub</h3>
-              <p>
-                YOu can look at at my projects and colabrate with me as well on
-                git hub.
-              </p>
-              <a href="https://github.com/axumite1misrak">GitHub</a>
+              <h2>Find Me and My Projects @</h2>
+              <div>
+                <h3>Find me on Linkedin</h3>
+                <p>You can see my full resumea on linkedin.</p>
+                <button>
+                  <a href="https://www.linkedin.com/in/misrak-teka-44b3901b2/"
+                    >LinkedIn</a
+                  >
+                </button>
+              </div>
+              <div>
+                <h3>Find me on GitHub</h3>
+                <p>
+                  You can look at at my projects and colabrate with me as well
+                  on git hub.
+                </p>
+                <button>
+                  <a href="https://github.com/axumite1misrak">GitHub</a>
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <!--Contact-->
-      <div class="contactme-continer">
-        <div class="contactme-content">
-          <div>
-            <h2>CONTACT ME</h2>
-            <p>Phone:<a href="218-316-0606">218.316.0606</a></p>
-            <p>
-              Email:<a href="halsuyeso2025@gmail.com"
-                >halsuyeso2020@gmail.com</a
+      <div class="Contact">
+        <div class="contactme-continer">
+          <div class="contactme-content">
+            <div>
+              <h2>CONTACT ME</h2>
+
+              <p>Phone:<a href="tel:218-316-0606">218.316.0606</a></p>
+              <p>
+                Email:<a
+                  href="mailto:halsuyeso2025@gmail.com?subject=Mail from our site"
+                  >halsuyeso2020@gmail.com</a
+                >
+              </p>
+            </div>
+
+            <div class="contact-box">
+              <form
+                action="https://formspree.io/halsuyeso2025@gmail.com"
+                method="POST"
               >
-            </p>
+                <div>
+                  <label for="user-name">Name:</label>
+                  <input id="user-name" type="text" name="name" />
+                </div>
+                <div>
+                  <label for="user-email">Email:</label>
+                  <input id="user-email" type="text" name="email" />
+                </div>
+                <div class="='message'">
+                  <label for="user-message">Message:</label>
+                  <textarea id="user-message" name="message"></textarea>
+                </div>
+                <div>
+                  <button type="submit">Submit</button>
+                </div>
+              </form>
+            </div>
           </div>
 
-          <div class="contact-box">
-            <form action="#" method="POST">
-              <div>
-                <label for="user-name">Name:</label>
-                <input id="user-name" type="text" name="name" />
-              </div>
-              <div>
-                <label for="user-email">Email:</label>
-                <input id="user-email" type="text" name="email" />
-              </div>
-              <div class="='message'">
-                <label for="user-message">Message:</label>
-                <textarea id="user-message" name="message"></textarea>
-              </div>
-              <div>
-                <button type="submit">Submit</button>
-              </div>
-            </form>
-          </div>
+          <footer>
+            <p>Credit to /@misrakteka</p>
+          </footer>
         </div>
-
-        <footer>
-          <p>Creadit to /@misrakteka</p>
-        </footer>
       </div>
     </main>
   </body>
